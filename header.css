@@ -1,0 +1,152 @@
+.search-bar{
+    height: 34px;
+    flex: 1;
+    padding-left: 10px;
+    font-size: 20px;
+   
+    border: 1px solid rgb(192, 192, 192);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius:50px;
+    box-shadow: inset 1px 2px 3px  rgba(0,0,0,0.0);
+    width: 0;
+   }
+   .search-bar::placeholder{
+    font-family: roboto,Arial;
+    font-size: 20px;
+    
+   }
+   .header{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   background-color: white;
+   border-bottom-width:1px;
+   z-index: 100;
+   }
+   .left-selection{
+    
+    display: flex;
+    align-items: center;
+   }
+
+   .middle-selection{
+    flex: 1;
+    margin-left: 250px;
+    margin-right: 250px;
+    width:550px;
+    display: flex;
+    align-items: center;
+   }
+
+   .right-selection{
+    width:150px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-right: 20px;
+   flex-shrink:0;
+   }
+   .youtube-memu-icon{
+    height:29px;
+    margin-left: 24px;
+    margin-right: 24px;
+   }
+   .youtube-icon{
+    height:25px;
+   }
+  .search-button{
+    height:39px;
+    width: 60px;
+    border-style: solid;
+    border-color:rgb(192, 192, 192);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius:50px;
+    background-color: rgba(240,240,240,);
+    position: relative;
+  }
+.search-button,.voice-button,.create-icon-hover,.notifications-icon-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .search-button .toolkit,
+  .voice-button .toolkit,
+   .create-icon-hover .toolkit,
+   .notifications-icon-container .toolkit{
+    position:absolute;
+    font-size: 12px;
+    background-color: rgb(97, 93, 93);
+    color: white;
+    bottom: -40px;
+    right: 0;
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+
+  .search-button:hover .toolkit,
+  .voice-button:hover .toolkit,
+  .create-icon-hover:hover .toolkit,
+  .notifications-icon-container:hover .toolkit{
+   opacity: 1;
+
+  }
+  .search-icon{
+    width:25px;
+   
+  }
+  .voice-button{
+  height:42px;
+  width: 42px;
+  border-radius: 50px;
+  border-color:white;
+  border-style:solid ;
+  margin-left:10px ;
+  position: relative;
+  }
+  
+
+  .voice-icon{
+   width: 23px;
+  }
+  .create-icon{
+    height: 30px;
+    
+  }
+  .notification-icon{
+    height: 30px;
+   
+  }
+  .channel-icon{
+    height:40px;
+    width: 40px;
+   border-radius:20px;
+  }
+  
+  .notifications-icon-container{
+    position: relative;
+  }
+  .notifications-time{
+    position: absolute;
+    color:white;
+    background-color: rgba(215, 3, 3, 0.775);
+    top:-2px;
+    right: -5px;
+    border-radius: 20px;
+   padding-left: 4px;
+   padding-right: 4px;
+   font-family: roboto,arial;
+  }
+
